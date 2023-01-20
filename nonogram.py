@@ -24,7 +24,7 @@ def init_play_grid():
     global play_grid
     # Create array of arrays
     play_grid = [
-        [cell_empty for i in range(width)] for j in range(height) # Each array is a column
+        [cell_empty for i in range(height)] for j in range(width) # Each array is a column
         ]
     print("Initialised play grid with size", width, "x", height)
     
@@ -32,7 +32,7 @@ def init_solution_grid():
     global solution_grid
     # Create random solution grid
     solution_grid = [
-        [random.randint(1, 2) for i in range(width)] for j in range(height) # Each array is a column
+        [random.randint(1, 2) for i in range(height)] for j in range(width) # Each array is a column
         ]
     print("Initialised solution grid with size", width, "x", height)
 
