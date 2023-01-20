@@ -147,11 +147,15 @@ def generate_keys():
         column_index, row_index = 0, 0 # Reset indicies
             
     
-        
+square_grid_size = int(input("Enter grid size you want...\n"))
+
+width, height = square_grid_size, square_grid_size
          
 
 init_play_grid()
 init_solution_grid()
 generate_keys()
 
-print("Play Grid:", play_grid, "\nSolution Grid:", solution_grid, "\nTop Key:", key_top, "\nSide Key:", key_side)
+#print("Play Grid:", play_grid, "\nSolution Grid:", solution_grid, "\nTop Key:", key_top, "\nSide Key:", key_side)
+
+print("Top Key:", key_top, "\nSide Key:", key_side)
